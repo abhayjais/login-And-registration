@@ -14,7 +14,7 @@ app.listen(port, () => {
     console.log(`connection is live at port no. ${port}`);
 })
 
-//Creating Post request registration
+//Creating Post request Registration
 app.post("/register", async (req, res) => {
     try {
         const addingMensRecords = new dbConn(req.body);
@@ -32,6 +32,7 @@ app.post("/register", async (req, res) => {
         });
     }
 })
+
 
 //Creating Post request for login
 app.post("/login", async (req, res) => {
